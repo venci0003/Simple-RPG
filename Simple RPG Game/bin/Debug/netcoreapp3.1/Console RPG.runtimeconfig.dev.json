@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\venci\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\venci\\.nuget\\packages"
+    ]
+  }
+}
