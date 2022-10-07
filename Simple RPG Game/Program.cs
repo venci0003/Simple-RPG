@@ -10,9 +10,9 @@ namespace Console_RPG
         static void Main(string[] args)
         {
 
-
             //player stats
             //string playerName = Console.ReadLine();
+            //TODO add armour
             string playerName = string.Empty;
             string playerClass = string.Empty;
             int playerHealth = 0;
@@ -35,6 +35,7 @@ namespace Console_RPG
             EnemiesProperties human = new EnemiesProperties(health, damage);
 
             //Weapons stats
+            //TODO
             string weaponName = string.Empty;
             int weaponDamage = 0;
 
@@ -77,7 +78,7 @@ namespace Console_RPG
                     string randomWord = string.Empty;
                     randomWord = randomWordsEncounter(randomWords);
                     Console.WriteLine($"{playerName} the {playerClass} has been {randomWord}");
-                    //TODO make random sentences when a character has been created
+                    //TODO make random sentences when a character has been created 
                 }
                 else if (playerClass == "zombie")
                 {
@@ -203,6 +204,7 @@ namespace Console_RPG
                                 Console.WriteLine("Press any key to continue...");
                                 Console.ForegroundColor = ConsoleColor.White;
                                 Console.ReadLine();
+                                Console.Clear();
                             }
                             else
                             {
@@ -214,6 +216,7 @@ namespace Console_RPG
                                 Console.WriteLine("Press any key to continue...");
                                 Console.ForegroundColor = ConsoleColor.White;
                                 Console.ReadLine();
+                                Console.Clear();
                             }
                         }
                     }
@@ -352,13 +355,13 @@ namespace Console_RPG
             Console.WriteLine($"You have {playerStatus[playerName].Experience} EXP!");
             Console.ForegroundColor = ConsoleColor.White;
         }
-        static int randomExperienceReward(int weaponDamage)
+        static int randomDamageForWeapons(int weaponDamage)
         {
             //Random damage for weapons
-            Random rndEXP = new Random();
+            Random rndDMG = new Random();
 
-            int randomExperience = rndEXP.Next(10, 20);
-            weaponDamage = randomExperience;
+            int randomDamage = rndDMG.Next(10, 20);
+            weaponDamage = randomDamage;
             return weaponDamage;
             
         }
@@ -546,54 +549,5 @@ namespace Console_RPG
                 return BlockChance = false;
             }
         }
-    }
-    class PlayerStatus
-    {
-        public PlayerStatus(string playerName, int health, int damage, int capacity,int backpackMaxCapacity, int gold, int experience, int level)
-        {
-            this.PlayerName = playerName;
-            this.Health = health;
-            this.Damage = damage;
-            this.Backpack = new List<Weapon>(capacity);
-            this.Capacity = capacity;
-            this.BackpackMaxCapacity = backpackMaxCapacity;
-            this.Gold = gold;
-            this.Experience = experience;
-            this.Level = level;
-        }
-
-        public string PlayerName { get; set; }
-        public int Health { get; set; }
-        public int Damage { get; set; }
-        public List<Weapon> Backpack { get; set; }
-        public int Capacity { get; set; }
-        public int BackpackMaxCapacity { get; set; }
-        public int Gold { get; set; }
-        public int Experience { get; set; }
-        public int Level { get; set; }
-    }
-    class Weapon
-    {
-        public Weapon(string weaponName, int damage)
-        {
-            this.WeaponName = weaponName;
-            this.Damage = damage;
-        }
-
-        public string WeaponName { get; set; }
-        public int Damage { get; set; }
-    }
-    class EnemiesProperties
-    {
-        public EnemiesProperties(int enemyHealth, int enemyDamage)
-        {
-
-            this.EnemyHealth = enemyHealth;
-            this.EnemyDamage = enemyDamage;
-        }
-
-
-        public int EnemyHealth { get; set; }
-        public int EnemyDamage { get; set; }
     }
 }
