@@ -9,7 +9,7 @@ namespace Console_RPG
     {
         static void Main(string[] args)
         {
-
+            //Console.SetCursorPosition(10, 12);
             //player stats
             //string playerName = Console.ReadLine();
             //TODO add armour
@@ -49,7 +49,7 @@ namespace Console_RPG
             //Dictionary for the player stats (name, health, damage, backpack capacity)
             Dictionary<string, PlayerStatus> playerStatus = new Dictionary<string, PlayerStatus>();
 
-            Console.WriteLine("Console RPG       Version 1.0\n\nStart\n");
+            Console.WriteLine("Console RPG       Version 1.1\n\nStart\n");
             string menuChoice = Console.ReadLine().ToLower();
             if (menuChoice == "start")
             {
@@ -73,7 +73,7 @@ namespace Console_RPG
                     backpackCapacity = 5;
                     backpackMaxCapacity = 5;
                     playerGold = 0;
-                    PlayerStatus currentPlayerStatus = new PlayerStatus(playerName, playerHealth, playerDamage, backpackCapacity, backpackMaxCapacity, playerGold, experience, currentLevel);
+                    PlayerStatus currentPlayerStatus = new PlayerStatus(playerName, playerHealth, playerDamage,  backpackMaxCapacity, playerGold, experience, currentLevel);
                     playerStatus[playerName] = currentPlayerStatus;
                     string randomWord = string.Empty;
                     randomWord = randomWordsEncounter(randomWords);
@@ -87,7 +87,7 @@ namespace Console_RPG
                     backpackCapacity = 3;
                     backpackMaxCapacity = 3;
                     playerGold = 0;
-                    PlayerStatus currentPlayerStatus = new PlayerStatus(playerName, playerHealth, playerDamage, backpackCapacity, backpackMaxCapacity, playerGold, experience, currentLevel);
+                    PlayerStatus currentPlayerStatus = new PlayerStatus(playerName, playerHealth, playerDamage,  backpackMaxCapacity, playerGold, experience, currentLevel);
                     playerStatus[playerName] = currentPlayerStatus;
                     string randomWord = string.Empty;
                     randomWord = randomWordsEncounter(randomWords);
@@ -100,7 +100,7 @@ namespace Console_RPG
                     backpackCapacity = 2;
                     backpackMaxCapacity = 2;
                     playerGold = 0;
-                    PlayerStatus currentPlayerStatus = new PlayerStatus(playerName, playerHealth, playerDamage, backpackCapacity, backpackMaxCapacity, playerGold, experience, currentLevel);
+                    PlayerStatus currentPlayerStatus = new PlayerStatus(playerName, playerHealth, playerDamage,  backpackMaxCapacity, playerGold, experience, currentLevel);
                     playerStatus[playerName] = currentPlayerStatus;
                     string randomWord = string.Empty;
                     randomWord = randomWordsEncounter(randomWords);
