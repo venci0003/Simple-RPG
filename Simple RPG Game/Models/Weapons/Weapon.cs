@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Console_RPG
+namespace Console_RPG.Models.Weapons
 {
     public class Weapon
     {
@@ -11,21 +11,21 @@ namespace Console_RPG
         private int damage;
         public Weapon(string weaponName, int damage)
         {
-            this.WeaponName = weaponName;
-            this.Damage = damage;
+            WeaponName = weaponName;
+            Damage = damage;
         }
 
         public string WeaponName
         {
-            get { return this.weaponName; }
+            get { return weaponName; }
 
-            set { this.weaponName = value; }
+            set { weaponName = value; }
         }
         public int Damage
         {
-            get { return this.damage; }
+            get { return damage; }
 
-            set { this.damage = value; }
+            set { damage = value; }
         }
     }
 }

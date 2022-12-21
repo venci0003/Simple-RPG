@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\venci\\source\\repos\\Console RPG\\Console RPG\\Console RPG.csproj": {}
+    "C:\\Users\\venci\\OneDrive\\Desktop\\Softuni Programs\\Simple-RPG\\Simple RPG Game\\Console RPG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\venci\\source\\repos\\Console RPG\\Console RPG\\Console RPG.csproj": {
+    "C:\\Users\\venci\\OneDrive\\Desktop\\Softuni Programs\\Simple-RPG\\Simple RPG Game\\Console RPG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\venci\\source\\repos\\Console RPG\\Console RPG\\Console RPG.csproj",
+        "projectUniqueName": "C:\\Users\\venci\\OneDrive\\Desktop\\Softuni Programs\\Simple-RPG\\Simple RPG Game\\Console RPG.csproj",
         "projectName": "Console RPG",
-        "projectPath": "C:\\Users\\venci\\source\\repos\\Console RPG\\Console RPG\\Console RPG.csproj",
+        "projectPath": "C:\\Users\\venci\\OneDrive\\Desktop\\Softuni Programs\\Simple-RPG\\Simple RPG Game\\Console RPG.csproj",
         "packagesPath": "C:\\Users\\venci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\venci\\source\\repos\\Console RPG\\Console RPG\\obj\\",
+        "outputPath": "C:\\Users\\venci\\OneDrive\\Desktop\\Softuni Programs\\Simple-RPG\\Simple RPG Game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\venci\\AppData\\Roaming\\NuGet\\NuGet.Config",
