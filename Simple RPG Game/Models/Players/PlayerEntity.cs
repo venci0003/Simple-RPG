@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Console_RPG.Models.Players.Interfaces;
+using Console_RPG.Models.Enemies.Interfaces;
 
 namespace Console_RPG.Models.Player
 {
@@ -64,7 +65,7 @@ namespace Console_RPG.Models.Player
             {
                 return health;
             }
-           private set
+            private set
             {
                 if (value <= 0)
                 {
@@ -85,9 +86,9 @@ namespace Console_RPG.Models.Player
 
         public int Level { get; private set; }
 
-        public void DealDamage(IPlayer firstPlayer, IPlayer enemy)
+        public void DealDamage(IPlayer player, IEnemy enemy)
         {
-            enemy.TakeDamage(firstPlayer);
+            enemy.TakeDamage(player);
         }
 
         public void TakeDamage(IPlayer player)
