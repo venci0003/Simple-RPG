@@ -1,6 +1,9 @@
-﻿namespace Console_RPG.Models.Players.Interfaces
+﻿using Console_RPG.Models.Enemies.Interfaces;
+using Console_RPG.Models.Interfaces;
+
+namespace Console_RPG.Models.Players.Interfaces
 {
-    public interface IPlayer : IInventory, IExperience
+    public interface IPlayer : IInventory, IExperience, IBasicAbility
     {
         string Name { get; }
 
@@ -9,9 +12,5 @@
         int Damage { get; }
 
         int Gold { get; }
-
-        public void DealDamage(IPlayer firstPlayer, IPlayer enemy);
-
-        public void TakeDamage(IPlayer player);
     }
 }
