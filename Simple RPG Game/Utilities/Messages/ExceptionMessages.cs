@@ -8,7 +8,7 @@
 
         public const string RoomTypeIncorrect = "Incorrect room type!";
 
-        public const string NotEnoughCapacity = "Not enough capacity.";
+        public const string NotEnoughCapacity = "Not enough capacity in backpack!";
 
         public const string NameCannotBeNullOrWhiteSpace = "Invalid name input!";
     }
