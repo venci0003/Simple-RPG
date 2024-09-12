@@ -1,2 +1,2 @@
 # Simple-RPG
-A simple project im working on 
+A simple project tham im not working on atm.
